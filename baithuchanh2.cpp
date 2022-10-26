@@ -11,6 +11,7 @@ scanf("%d",&n);
 nhapmang(a,n);
 xuatmang(a,n);
 giatriln(a,n);
+tinhtich(a,n);
 return 0; 
 }
 
@@ -40,5 +41,10 @@ max = a[i];
 printf("\n So phan tu lon nhat la la %d", max);
 
 }
-
+void tinhtich(int a[10], int n)
+{ int tich=1;
+   for (int i=0;i<n;i++)
+   tich = tich*a[i];
+   printf("\n Tich cac phan tu la %d", tich);
+}
 
