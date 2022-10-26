@@ -48,5 +48,7 @@ void tinhtich(int a[10], int n)
    printf("\n Tich cac phan tu la %d", tich);
 
 abcxyz
+aysdgauysdi
+asdhaisudhaihd
 }
 
