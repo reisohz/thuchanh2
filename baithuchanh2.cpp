@@ -47,8 +47,6 @@ void tinhtich(int a[10], int n)
    tich = tich*a[i];
    printf("\n Tich cac phan tu la %d", tich);
 
-abcxyz
-aysdgauysdi
-asdhaisudhaihd
+Test chinh sua
 }
 
