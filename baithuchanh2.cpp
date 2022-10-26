@@ -46,5 +46,7 @@ void tinhtich(int a[10], int n)
    for (int i=0;i<n;i++)
    tich = tich*a[i];
    printf("\n Tich cac phan tu la %d", tich);
+
+abcxyz
 }
 
