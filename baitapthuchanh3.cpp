@@ -6,6 +6,7 @@ void tinhtich(int a[10], int n);
 void insonguyento(int a[10], int n);
 void TongNT(int a[10],int n);
 void nhapx (int a[10],int n);
+void tangdan(int a[10],int n);
 int main()
 {
 int a[10], n;
@@ -18,6 +19,7 @@ tinhtich(a,n);
 insonguyento(a,n);
 TongNT(a,n);
 nhapx(a,n);
+tangdan(a,n);
 return 0; 
 }
 
@@ -84,6 +86,7 @@ snt+=a[i];
 }
 printf("\nTong cac so nguyen to trong mang la: %d \n",snt);
 }
+
 void nhapx (int a[10],int n)
 {
    printf("Nhap vao gia tri cho x: ");
@@ -96,4 +99,26 @@ void nhapx (int a[10],int n)
    		printf("%d \t",i);
    	}
    }
+}
+
+void tangdan(int a[10],int n)
+{
+int tg;
+    for(int i = 0; i < n - 1; i++){
+        for(int j = i + 1; j < n; j++){
+            if(a[i] > a[j]){
+                tg = a[i];
+                a[i] = a[j];
+                a[j] = tg;        
+            }
+        }
+    }
+    
+    
+    printf("\nMang da sap xep la: ");
+    for(int i = 0; i < n; i++){
+        printf("%5d", a[i]);
+    }
+    
+    
 }
