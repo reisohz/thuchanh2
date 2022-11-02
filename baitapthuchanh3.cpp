@@ -5,6 +5,7 @@ void giatriln(int a[10], int n);
 void tinhtich(int a[10], int n);
 void insonguyento(int a[10], int n);
 void TongNT(int a[10],int n);
+void nhapx (int a[10],int n);
 int main()
 {
 int a[10], n;
@@ -16,6 +17,7 @@ giatriln(a,n);
 tinhtich(a,n);
 insonguyento(a,n);
 TongNT(a,n);
+nhapx(a,n);
 return 0; 
 }
 
@@ -81,4 +83,17 @@ snt+=a[i];
  }
 }
 printf("\nTong cac so nguyen to trong mang la: %d \n",snt);
+}
+void nhapx (int a[10],int n)
+{
+   printf("Nhap vao gia tri cho x: ");
+   scanf("%d", &n);
+   printf("\n Vi tri cua x trong mang la: \n");
+   for (int i = 0;i<n;i++)
+   {
+   	if(a[i]==n)
+   	{
+   		printf("%d \t",i);
+   	}
+   }
 }
